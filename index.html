@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Rubik 3x3 Solver</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cubejs@1.3.2/lib/cube.min.js"></script>
+</head>
+<body>
+
+  <!-- Algorithm Bar -->
+  <div id="algoBar">
+    <span class="empty">Set warna pada Rubik, kemudian tekan Solve</span>
+  </div>
+
+  <!-- 3D Canvas -->
+  <div id="canvasWrap">
+    <div id="status"></div>
+  </div>
+
+  <!-- Color Picker -->
+  <div id="colorPicker"></div>
+
+  <!-- Controls -->
+  <div id="controls">
+    <button id="prevBtn" disabled>◀</button>
+    <span id="stepInfo">—</span>
+    <button id="nextBtn" disabled>▶</button>
+  </div>
+
+  <!-- Action Buttons -->
+  <div id="actions">
+    <button id="solveBtn">SOLVE</button>
+    <button id="resetBtn">RESET</button>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
